@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Messaging\" />
+    <None Remove="Processing\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Error\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Messaging\" />
+    <Folder Include="Processing\" />
+    <Folder Include="Error\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+</Project>
