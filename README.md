@@ -4,6 +4,16 @@ This is an application that reads the Twitter stream api and reports the top 10 
 
 ## How to Run
 
-Set an Environemnt Variable, TWITTER_BEARER_TOKEN with the bearer token you received from your twitter development account.  Note that this is not just an API-Key and API-Key Secret.  This is the actual bearer token that you receieved when you signed up for a developer account.
+The following script has the commands to checkout, build and run the application.
 
-After that, Build the application and run.
+```sh
+git clone https://github.com/zthun/birds-with-numbers.git
+cd birds-with-numbers
+export TWITTER_BEARER_TOKEN=<Your twitter bearer token>
+dotnet build
+dotnet run --project BirdsWithNumbers.CLI
+```
+
+## Note on the bearer token
+
+The bearer token is the twitter OAuth 2.0 access token. It is not the api key alone. You should have received your api key, api secret, and an accompying bearer token when you sign up for twitter's development platform.  
